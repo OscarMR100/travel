@@ -1,0 +1,17 @@
+<div class="contenedor-mapa col-md-6" style="left: 100px;">
+  <div class="align-items-center justify-content-center">
+      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+          var setting = {"query":"Ciudad del Carmen, Camp., México","width":800,"height":550,"satellite":false,"zoom":1,"placeId":"ChIJxe8nVwkH8YURxZF2aTCRX50","cid":"0x9d5f9130697691c5","coords":[18.6504879,-91.80745859999999],"lang":"es","queryString":"Ciudad del Carmen, Camp., México","centerCoord":[18.6504879,-91.80745859999999],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1076432"};
+          var d = document;
+          var s = d.createElement('script');
+          s.src = 'https://1map.com/js/script-for-user.js?embed_id=1076432';
+          s.async = true;
+          s.onload = function (e) {
+          window.OneMap.initMap(setting)
+          };
+          var to = d.getElementsByTagName('script')[0];
+          to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/es/map-embed">1 Map</a></div>
+  </div>
+</div>

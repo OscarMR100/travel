@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TravelBody</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'><link rel="stylesheet" href="../CSS/style-carrusel.css">
+  <link rel="stylesheet" href="../CSS/encabezado.css">
+  <link rel="stylesheet" href="../CSS/sidebars.css">
+  <link rel="stylesheet" href="../CSS/style-globe.css">
+  <script src="../JS/navegacion.js"></script>
+</head>
+<body>
+
+
+
+<!---BARRA SUPERIOR----------------------------------------------------------------------------------------------------->
+  <div class="con1"></div>
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-1">
+		<a href="#" class="px-4 align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+		<img class="bi " src="../IMAGENES/Logoweb.png" width="50px" xlink:href="#bootstrap">
+		<img class="bi " src="../IMAGENES/PBWEB.png" width="150px" xlink:href="#bootstrap">
+		</a>
+
+		<ul class="nav nav-pills px-4">
+			
+			<li><span class="cerrar" onclick="abrirBarra()">☰</span></li>
+			
+		</ul>
+	</header>
+	<div class="con3"></div>
+</div>
+
+<div class="separacion"></div>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+
+<!---MUNDO----------------------------------------------------------------------------------------------------->
+<div class="contenedor"  id="seccion_inicio" style="color: #000000; background: #ffffff; border-radius: 15px; padding: 20px; box-sizing: border-box; left: 0; right: 0;">
+
+<div class="text-center">
+    <p class="fs-2 fw-bold">ENCUENTRA EL PROXIMO DESTINO</p><div class="separacion"></div>
+</div>
+
+<div class="page align-items-center p-md-5" style="top: 10px;">
+  <div class="globe-wrapper">
+      <canvas id="globe-3d"></canvas>
+      <canvas id="globe-2d-overlay"></canvas>
+      <div id="globe-popup-overlay">
+          <div class="globe-popup"></div>
+      </div>
+  </div>
+</div>
+
+<div class="separacion"></div><div class="separacion"></div>
+
+<header class="d-flex flex-wrap align-items-center justify-content-center py-3 mb-4 border-bottom">
+      <ul class="nav nav-pills">
+          <li class="nav-item p-1"><spam onclick="irASeccion()" class="nav-link active aventura">Hoteles</spam></li>
+          <li class="nav-item p-1 "><spam onclick="irASeccion2()" class="nav-link active aventura">Restaurantes</spam></li>
+          <li class="nav-item p-1"><spam onclick="irASeccion3()" class="nav-link active">Vehiculos</spam></li>
+          <li class="nav-item p-1"><a href="../HTML/galeria.html" class="nav-link active">Galeria</a></li>
+          <li class="nav-item p-1"><a href="#" class="nav-link active">Reseñas</a></li>
+      </ul>
+</header>
+
+</div>
+<!-------------------------------------------------------------------------------------------------------->
+
+<!---CARRUSEL----------------------------------------------------------------------------------------------------->
+<section class="game-section">
+
+  <h1 class=""><b>Lugares para visitar</b></h1>
+  <div class="line-title"></div>
+<div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/05/le-blanc-spa-resort.jpg);">
+      <div class="item-desc">
+        <h3>Playa del carmen</h3>
+        <p>Playa del Carmen, situada en la costa del Mar Caribe en el estado de Quintana Roo, México, es un destino turístico de renombre mundial que ofrece una experiencia única para los visitantes. Sus playas de arena blanca y aguas cristalinas son el escenario perfecto para relajarse y disfrutar del sol caribeño.</p><a href="" class="fs-3">Visitar</a>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/08/gran-muralla-china.jpg);">
+      <div class="item-desc">
+        <h3> Gran Muralla</h3>
+        <p>En la Necrópolis de Guiza, a 14 km al suroeste de El Cairo, hallarás las pirámides Micerinos, Kefrén y Keops, esta última la más atractiva para los turistas pues es la única de las Siete Maravillas del Mundo Antiguo que se mantiene en pie. Además, es la mayor de las pirámides egipcias y fue la construcción más alta del planeta por casi 4 milenios.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/08/gran-piramide-de-guiza-egipto.jpg);">
+      <div class="item-desc">
+        <h3>Pirámide de Guiza</h3>
+        <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/08/la-alhambra-granada-espana.jpg);">
+      <div class="item-desc">
+        <h3>La Alhambra</h3>
+        <p>El monumento español más visitado después del Templo Expiatorio de la Sagrada Familia. Esta ciudadela andalusí Patrimonio de la Humanidad y en la que vivían el rey nazarí y su corte, está formada por palacios, bellos jardines y un alcázar.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/08/torre-eiffel-paris-francia.jpg);">
+      <div class="item-desc">
+        <h3>Torre Eiffel</h3>
+        <p>La torre más famosa del mundo tiene una altura arquitectónica de 300 metros, elevándose a 324 metros al incluir su antena. Tiene 3 plantas situadas respectivamente a 57.6, 115.7 y 276.1 metros de la base, las que puedes alcanzar subiendo sus más de 1600 escalones o en ascensores.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/08/hollywood-sign-los-angeles-eeuu.jpg);">
+      <div class="item-desc">
+        <h3>Hollywood Sign</h3>
+        <p>Lo que comenzó en 1923 como un enorme anuncio comercial para promocionar un desarrollo inmobiliario, se convirtió en la principal postal turística de Los Ángeles, California.</p>
+      </div>
+    </div>
+</div>
+
+</section>
+
+<div class="separacion"></div><div class="separacion"></div>
+
+<!--------------------------------------------------------------------------------------------------------> 
+
+<!---Inicio----------------------------------------------------------------------------------------------------->
+
+<div class="contenedor"  id="seccion_inicio" style="color: #464646; background: #dcdcdc; border-radius: 15px; padding: 20px; box-sizing: border-box; left: 0; right: 100px;">
+  <div class="text-center">
+      <p class="fs-2 fw-bold">ENCUENTRA EL PROXIMO DESTINO</p>
+  </div>
+  <div class="separacion"></div>    
+
+  <div class="container text-center "  style="position: relative; z-index: 1;">
+    <div class="row">
+        <div class="col" style="text-align:center;padding:1em 0;"> <h5><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/5128581"><span style="color:rgb(0, 0, 0);">Hora actual en</span><br/>New York City, <br>Estados Unidos (USA)</a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FNew_York" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+
+        
+        <div class="col" style="text-align:center;padding:1em 0;"> <h5><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3530597"><span style="color:rgb(0, 0, 0);">Hora actual en</span><br />Mexico City, <br> México</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FMexico_City" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+
+        <div class="col" style="text-align:center;padding:1em 0;"> <h5><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3469058"><span style="color:rgb(0, 0, 0);">Hora actual en</span><br />Brasília, <br>Brasil</a></h4> <h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FSao_Paulo" width="100%" height="90" frameborder="0" seamless></iframe></h6> </div>
+
+    </div>
+</div>
+  
+  <div class="container text-center" id="seccion2">
+      <div class="row">
+          <div class="col" >
+              <img class="img2 mb-2" style="border-radius: 20px" src="../IMAGENES/NY.jpg" class="img-fluid" alt="...">    
+      
+              <h2>Nueva York</h2>
+              <p>Embárcate en una aventura inolvidable hacia la mágica Cascada Esmeralda. Sumérgete en la frescura de sus aguas cristalinas, rodeado de exuberante vegetación. Descubre la serenidad y la belleza de la naturaleza en este viaje de ensueño.</p>
+              <p><a class="btn btn-secondary" style="background: #efefef; color: black; width: 200px;" href onclick="redirigirpagina3()">Conocer mas &raquo;</a></p>
+          </div>
+          <div class="col">
+              <img class=" mb-2" style="border-radius: 20px; height: 200px;" src="../IMAGENES/CDMX.jpg" class="img-fluid" alt="...">    
+      
+              <h2>Ciudad de Mexico</h2>
+              <p>Disfruta de la escapada perfecta a la playa de tus sueños. Sumérgete en las aguas turquesas y relájate en la suave arena dorada. Descubre la serenidad y la belleza de la naturaleza en este viaje de ensueño. </p>
+              <p><a class="btn btn-secondary" style="background: #efefef; color: black;" href onclick="redirigirpagina4()">Conocer mas &raquo;</a></p>
+          </div>
+          <div class="col">
+              <img class="mb-2" style="border-radius: 20px; height: 200px;" src="../IMAGENES/Brasilia.jpg" class="img-fluid" alt="...">    
+      
+              <h2>Brasília</h2>
+              <p>Embárcate en una aventura inolvidable hacia la mágica Cascada Esmeralda. Sumérgete en la frescura de sus aguas cristalinas, rodeado de exuberante vegetación. Descubre la serenidad y la belleza de la naturaleza en este viaje de ensueño. </p>
+              <p><a class="btn btn-secondary" style="background: #efefef; color: black;" href onclick="redirigirpagina5()">Conocer mas &raquo;</a></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="separacion"></div><div class="separacion"></div>
+
+  <!-------------------------------------------------------------------------------------------------------------->
+
+
+  <!---HOTELES----------------------------------------------------------------------------------------------------->
+
+<div class="contenedor"  id="Hoteles" style=" color: #421908; background: #fef0d6; border-radius: 15px; padding: 20px; box-sizing: border-box; left: 0px;">
+
+  <h1 class="text-center" style="font-family: Times New Roman, Times, serif;"><b>HOTELES DEL SUEÑO</b></h1><div class="separacion"></div>
+
+  <div class="p-4 p-md-5 mb-4 rounded row" style="background: #f79f40; color: #7a3514;">
+      <div class="col px-0">
+        <h1 class="display-4 fst-italic">¿Buscando hotel?</h1>
+        <p class="lead my-3 fs-5">¡No busques más! Tal vez la siguiente página te pueda ser de ayuda. Trivago es una plataforma dedicada a encontrar las mejores ofertas para hoteles, pero ¿sabías que también ofrece una amplia selección de restaurantes cercanos a tu alojamiento?
+
+          Explora la variedad de opciones gastronómicas disponibles cerca del hotel de tus sueños. Desde acogedores cafés hasta restaurantes de alta cocina, Trivago te conecta con los mejores lugares para satisfacer tu paladar durante tu estadía.
+          
+          ¿No me crees? ¡Visítala ahora mismo! Simplemente haz clic en el enlace y descubre las increíbles ofertas para el hotel de tus sueños y los mejores restaurantes de la zona. ¡No te arrepentirás!</p>
+        <p class="lead mb-0"><a class=" fw-bold" href onclick="redirigirpagina2()">Visitar Trivago</a></p>
+      </div>
+      <div class="col">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"> <!-- Imagenes en carrusel -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+              <div class="container">
+                  <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="1420px" src="../IMG_HOTELES/hotel-img.jpg" class="img-fluid" alt="...">
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="container">
+                  <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="" src="../IMG_HOTELES/HL-2.jpg" class="img-fluid" alt="...">
+                  </div>
+              </div>
+                <div class="carousel-item">
+                <div class="container">
+                  <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="" src="../IMG_HOTELES/HL-3.jpg" class="img-fluid" alt="...">
+                </div>
+                </div>
+          </div>
+              
+          </div>
+  
+          <button class="carousel-control-prev " type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0  rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="left: 10px;">
+          <div class="col p-4 d-flex flex-column position-static" style="background: #fbcb88;">
+            <h4><strong class="d-inline-block mb-2 text-primary">Buscas una casa para viajar</strong></h4>
+            <p class="card-text mb-auto">Desde acogedores apartamentos en el centro de la ciudad hasta espaciosas casas con jardín en los suburbios, esta web te ayudara a encontrar tu lugar ideal.
+            </p>
+            <a href onclick="redirigirpagina6()" class="stretched-link">Visitar</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-auto d-block" src="../IMG_HOTELES/HT-MIN-1.jpg" style="height: 270px; width: 200px; " class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 borrounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" style="background: #fbcb88; border: 1px solid #fbcb88;">
+            <h4><strong class="d-inline-block mb-2 text-success">Buscas una cabaña para despejarte</strong></h4>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href onclick="redirigirpagina6()" class="stretched-link">Visitar</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-auto d-block" src="../IMG_HOTELES/HT-MIN-2.jpg" style="height: 270px; width: 200px; " class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="separacion"></div><div class="separacion"></div>
+<!-------------------------------------------------------------------------------------------------------->
+
+<!---RESTAURANTES----------------------------------------------------------------------------------------------------->
+<div class="con-completo" id="Restaurantes"  style="background-color: #e8f3ff; border-radius: 15px; padding: 20px;">
+
+  <h1 class="text-center" style="font-family: Times New Roman, Times, serif;"><b>RESTAURANTES</b></h1><div class="separacion"></div>
+
+  <div class="p-4 p-md-5 mb-4 rounded row" style="background: #85b7ff; color: #0a155c;">
+    <div class="col px-0">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="container">
+                <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="1420px" src="../IMG_HOTELES/RT-1.jpg" class="img-fluid" alt="...">
+            </div>
+            </div>
+            <div class="carousel-item">
+            <div class="container">
+                <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="" src="../IMG_HOTELES/HL-2.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+              <div class="carousel-item">
+                <div class="container">
+                        <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="" src="../IMG_HOTELES/RT-2.jpg" class="img-fluid" alt="...">
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      
+    </div>
+    <div class="col">
+      <h1 class="display-4 fst-italic">¿Buscando Restaurantes?</h1>
+      <p class="lead my-3 fs-5">¿Listo para un viaje culinario incomparable? En XXX, te llevamos a explorar los rincones más deliciosos de la gastronomía. Desde restaurantes familiares hasta elegantes establecimientos gourmet, te ofrecemos las mejores ofertas y promociones para que disfrutes de experiencias gastronómicas únicas.
+
+        ¿Antojo de sushi fresco, sabrosas parrilladas o exquisita comida italiana? Sea cual sea tu preferencia, en XXX tenemos algo especial esperando por ti. ¡Descubre nuevos sabores, deleita tu paladar y crea recuerdos inolvidables en los mejores restaurantes de la ciudad!
+        
+        ¿Por qué conformarte con lo ordinario cuando puedes experimentar lo extraordinario? Con XXX, cada comida se convierte en una aventura gastronómica emocionante. ¡No esperes más y únete a nosotros para descubrir los placeres culinarios que el mundo tiene para ofrecer!</p>
+      <p class="lead mb-0"><a href onclick="redirigirpagina()" class="fw-bold">Visitar XXXX</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+          <div class="col">
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="left: 10px;">
+              <div class="col p-4 d-flex flex-column position-static" style=" color: #f7f6f2; background: #85b7ff;">
+                <h4><strong class="d-inline-block mb-2" style="color: #000000;">¿Buscas donde pasar el rato?</strong></h4>
+                <p class="card-text mb-auto" >This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="img-fluid mx-auto d-block" src="../IMG_HOTELES/PT-MIN-1.jpg" style="height: 250px; width: 200px; " class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="col" >
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative " >
+              <div class="col p-4 d-flex flex-column position-static" style="background: #85b7ff;">
+                <h4><strong class="d-inline-block mb-2" style="color: rgb(160, 0, 0);">¿Buscas comida rapida?</strong></h4>
+                <p class="mb-auto" style="color: rgba(0, 0, 0, 0.402);">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href onclick="redirigirpagina()" class="stretched-link">Visitar</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="img-fluid mx-auto d-block" src="../IMG_HOTELES/RT-MIN-2.jpg" style="height: 250px; width: 200px; " class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+  </div>
+
+</div>
+
+<div class="separacion"></div><div class="separacion"></div>
+<!-------------------------------------------------------------------------------------------------------->
+
+<div class="contenedor"  id="Autos" style=" color: #421908; background: #fae8e6; border-radius: 15px; padding: 20px; box-sizing: border-box; left: 0px;">
+
+  <h1 class="text-center" style="font-family: Times New Roman, Times, serif;"><b>AUTOS EN RENTA</b></h1><div class="separacion"></div>
+
+  <div class="p-4 p-md-5 mb-4 rounded row" id="Hoteles" style="background: #d6675d; color: #3c1613;">
+      <div class="col px-0">
+        <h1 class="display-4 fst-italic">¿Buscando donde rentar un auto?</h1>
+        <p class="lead my-4 fs-5">¡No busques más! Tal vez la siguiente página te pueda ser de ayuda. Rentalcars.com es una plataforma dedicada a encontrar las mejores ofertas para hoteles, pero ¿sabías que también ofrece una amplia selección de restaurantes cercanos a tu alojamiento?
+
+          Explora la variedad de opciones gastronómicas disponibles cerca del hotel de tus sueños. Desde acogedores cafés hasta restaurantes de alta cocina, Rentalcars.com te conecta con los mejores lugares para satisfacer tu paladar durante tu estadía.
+          
+          ¿No me crees? ¡Visítala ahora mismo! Simplemente haz clic en el enlace y descubre las increíbles ofertas para el hotel de tus sueños y los mejores restaurantes de la zona. ¡No te arrepentirás!</p>
+        <p class="lead mb-0"><a class=" fw-bold" href onclick="redirigirpagina7()">Visitar Rentalcars.com</a></p>
+      </div>
+      <div class="col">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"> <!-- Imagenes en carrusel -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+              <div class="container">
+                  <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" height="1420px" src="../IMAGENES/auto1.jpg" class="img-fluid" alt="...">
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class="container">
+                  <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px"  src="../IMAGENES/auto2.jpg" class="img-fluid" alt="...">
+                  </div>
+              </div>
+                <div class="carousel-item">
+                <div class="container">
+                  <img class="img-fluid rounded-3 rounded mx-auto d-block" width="1080px" src="../IMAGENES/auto3.jpg" class="img-fluid" alt="...">
+                </div>
+                </div>
+          </div>
+              
+          </div>
+  
+          <button class="carousel-control-prev " type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0  rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="left: 10px;">
+          <div class="col p-4 d-flex flex-column position-static" style="background: #e48d85;">
+            <h4><strong class="d-inline-block mb-2 text-primary">Buscas autos exoticos</strong></h4>
+            <p class="card-text mb-auto">Desde acogedores apartamentos en el centro de la ciudad hasta espaciosas casas con jardín en los suburbios, esta web te ayudara a encontrar tu lugar ideal.
+            </p>
+            <a href="#" class="stretched-link">Visitar</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-auto d-block" src="../IMAGENES/exotico.jpg" style="height: 270px; width: 200px; " class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 borrounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static" style="background: #e48d85; border: 1px solid #fbcb88;">
+            <h4><strong class="d-inline-block mb-2 text-success">Buscas algo clasico</strong></h4>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-auto d-block" src="../IMAGENES/clasico.jpg" style="height: 270px; width: 200px; " class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<!---BARRA LATERAL----------------------------------------------------------------------------------------------------->
+<div class="barra-lateral" id="miBarraLateral">
+  <div class="separacion"></div>  
+  <a href="javascript:void(0)" class="cerrar" onclick="cerrarBarra()">×</a>
+  <a href="../HTML/login.html" class="nav-link col">INICIAR SESIÓN</a>
+  <a href="index.html" class="nav-link">Inicio</a>
+  <a href="Reseñas.html" class="nav-link">Reseñas</a>
+  <a href="../HTML/galeria.html" class="nav-link">Galeria</a>
+  <div class="container">
+    <select id="selector" class="form-select nav-link" aria-label="Default select example">
+      <option style="color: #000000;">Contactanos</option>
+      <option value="informacion" style="color: #000000;">Información de empresa</option>
+      <option value="contacto" style="color: #000000;">Números de contacto</option>
+    </select>
+    <div class="container"><button class="btn btn-outline-success start-" onclick="redirigir()">Seleccionar</button></div>
+</div>
+</div>
+
+<script>
+  function abrirBarra() {
+      document.getElementById("miBarraLateral").style.width = "250px";
+  }
+
+  function cerrarBarra() {
+      document.getElementById("miBarraLateral").style.width = "0";
+  }
+</script>
+<!-------------------------------------------------------------------------------------------------------->
+
+<!---PIE DE PAGINA----------------------------------------------------------------------------------------------------->
+
+<div class="">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Travel-Body Company, Inc</p>
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img class="bi me-2" src="../IMAGENES/logoweb.png" width="50px" xlink:href="#bootstrap">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a onclick="abrirBarra()" class="nav-link px-2 text-body-secondary">Navegacion</a></li>
+          <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Subir</a></li>
+      </ul>
+  </footer>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<!---MODAL----------------------------------------------------------------------------------------------------->
+
+<div id="myModal" class="modal" style="top: 30%; left: 1%; width: 98%;">
+  <div class="modal-content" style="padding-left: 10px; padding-right: 10px;">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    
+<br><h3>TravelBody</h3>
+
+<br><b><p>Eslogan:</b> Explora, Vive, Conecta</p>
+
+<b>Descripción de la Empresa:</b> TravelBody es una empresa dedicada a brindar información y experiencias únicas sobre destinos turísticos en todo el mundo. Nuestro enfoque se centra en conectar a las personas con los lugares que visitan de una manera auténtica y significativa. Creemos que viajar no solo es una actividad recreativa, sino una oportunidad para sumergirse en nuevas culturas, descubrir paisajes impresionantes y crear recuerdos inolvidables. <br><br>
+
+<b>Servicios:</b>
+
+TravelBody se enorgullece de ofrecer una amplia gama de servicios diseñados para enriquecer la experiencia de viaje de nuestros clientes. Nuestra primera prioridad es proporcionar una información completa y detallada sobre destinos turísticos tanto populares como menos conocidos. Desde los puntos de interés más emblemáticos hasta las gemas ocultas, brindamos una visión completa que abarca actividades recomendadas, eventos locales, opciones gastronómicas y valiosos consejos de viaje para que cada viajero pueda planificar su aventura de manera informada y emocionante.Además, entendemos que cada viajero es único, con intereses y preferencias individuales. Por ello, nos especializamos en crear experiencias personalizadas que se adapten a las necesidades de cada cliente. Ya sea un viaje de aventura buscando adrenalina, una escapada romántica para dos personas, un recorrido cultural inmersivo o unas vacaciones familiares llenas de diversión, nuestro equipo experto diseña itinerarios a medida que garantizan momentos memorables y experiencias inolvidables.
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL-2---------------------------------------------------------------------------------------------------->
+
+<div id="myModal2" class="modal text-center" style="top: 30%; left: 25%; width: 50%;">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal2()">&times;</span>
+    <br><h3><b></b>Contacto:</b></h3>
+    <br>Sitio Web: www.travelbody.com
+    <br>Correo Electrónico: info@travelbody.com
+    <br>Teléfono: +52 9932282083
+    <br>Dirección: Calle 17, Ciudad del carmen, Campeche, Mexico <br><br>
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL-FUNCION----------------------------------------------------------------------------------------------------->
+<script>
+  function redirigir() {
+    var selector = document.getElementById("selector");
+    var opcionSeleccionada = selector.value; // Obtener el valor de la opción seleccionada
+  
+    switch (opcionSeleccionada) {
+      case "informacion":
+        // Llamar a la función para mostrar información de la empresa
+        abrirModal();
+        break;
+      case "contacto":
+        // Llamar a la función para mostrar los números de contacto
+        abrirModal2();
+        break;
+      case "correo":
+        // Llamar a la función para enviar un correo
+        enviarCorreo();
+        break;
+      default:
+        // No hay acción necesaria para la opción "Contacto"
+        break;
+    }
+  }
+  </script>
+  
+  <!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL----------------------------------------------------------------------------------------------------->
+
+<script>
+  function abrirModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Función para cerrar el modal
+function cerrarModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Cierra el modal si el usuario hace clic fuera de él
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL-2---------------------------------------------------------------------------------------------------->
+
+<script>
+  function abrirModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+// Función para cerrar el modal
+function cerrarModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+
+// Cierra el modal si el usuario hace clic fuera de él
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal2");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---SUBIR---------------------------------------------------------------------------------------------------->
+<button id="btnVolverArriba" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: none;">
+  <img src="../IMAGENES/arrow-bar-up.svg" alt="Volver al Inicio" style="width: 32px; height: 32px;">
+</button>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("btnVolverArriba").style.display = "block";
+    } else {
+      document.getElementById("btnVolverArriba").style.display = "none";
+    }
+  }
+  
+  document.getElementById("btnVolverArriba").addEventListener("click", function() {
+    document.body.scrollTop = 0; // Para navegadores Safari
+    document.documentElement.scrollTop = 0; // Para otros navegadores
+  });
+  </script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+
+</section>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="../JS/script-carrusel.js"></script>
+<script>
+  window.addEventListener('offline', function(event) {
+    window.location.href = '../HTML/error.html';
+  });
+</script>
+<script type="x-shader/x-fragment" id="fragment-shader-map">
+  uniform sampler2D u_map_tex;
+
+  varying float vOpacity;
+  varying vec2 vUv;
+
+  void main() {
+      vec3 color = texture2D(u_map_tex, vUv).rgb;
+      color -= .2 * length(gl_PointCoord.xy - vec2(.5));
+      float dot = 1. - smoothstep(.38, .4, length(gl_PointCoord.xy - vec2(.5)));
+      if (dot < 0.5) discard;
+      gl_FragColor = vec4(color, dot * vOpacity);
+  }
+</script>
+<script type="x-shader/x-vertex" id="vertex-shader-map">
+  uniform sampler2D u_map_tex;
+  uniform float u_dot_size;
+  uniform float u_time_since_click;
+  uniform vec3 u_pointer;
+
+  #define PI 3.14159265359
+
+  varying float vOpacity;
+  varying vec2 vUv;
+
+  void main() {
+
+      vUv = uv;
+
+      // mask with world map
+      float visibility = step(.2, texture2D(u_map_tex, uv).r);
+      gl_PointSize = visibility * u_dot_size;
+
+      // make back dots semi-transparent
+      vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+      vOpacity = (1. / length(mvPosition.xyz) - .7);
+      vOpacity = clamp(vOpacity, .03, 1.);
+
+      // add ripple
+      float t = u_time_since_click - .1;
+      t = max(0., t);
+      float max_amp = .15;
+      float dist = 1. - .5 * length(position - u_pointer); // 0 .. 1
+      float damping = 1. / (1. + 20. * t); // 1 .. 0
+      float delta = max_amp * damping * sin(5. * t * (1. + 2. * dist) - PI);
+      delta *= 1. - smoothstep(.8, 1., dist);
+      vec3 pos = position;
+      pos *= (1. + delta);
+
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.);
+  }
+</script>
+<!-- partial -->
+<script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script><script type="module" src="../JS/script-globe.js"></script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---SECCIONES---------------------------------------------------------------------------------------------------->
+
+<script>
+  function irASeccion() {
+      // Utiliza el método scrollIntoView para desplazarte a la sección 2
+      document.getElementById('Hoteles').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+<script>
+  function irASeccion2() {
+      // Utiliza el método scrollIntoView para desplazarte a la sección 2
+      document.getElementById('Restaurantes').scrollIntoView({ behavior: 'smooth' });
+  
+  }
+</script>
+
+<script>
+  function irASeccion3() {
+      // Utiliza el método scrollIntoView para desplazarte a la sección 2
+      document.getElementById('Autos').scrollIntoView({ behavior: 'smooth' });
+  
+  }
+</script>
+
+<script>
+  function redirigirpagina() {
+  window.open("https://gastroranking.mx/", "_blank");
+  }
+</script>
+
+<script>
+  function redirigirpagina2() {
+  window.open("https://www.trivago.com.mx/es-MX", "_blank");
+  }
+</script>
+
+<script>
+
+function hotelesonline1() {
+  window.location.href = "https://www.ejemplo.com";
+}
+
+</script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<script>
+  function redirigirpagina3() {
+  window.open("https://lovingnewyork.es/", "_blank");
+  }
+</script>
+
+<script>
+  function redirigirpagina4() {
+  window.open("https://cdmxsecreta.com/", "_blank");
+  }
+</script>
+
+<script>
+  function redirigirpagina5() {
+  window.open("https://www.britannica.com/place/Brasilia", "_blank");
+  }
+</script>
+
+<script>
+  function redirigirpagina6() {
+  window.open("https://www.airbnb.mx/", "_blank");
+  }
+</script>
+
+<script>
+  function redirigirpagina7() {
+  window.open("https://www.rentalcars.com/?affiliateCode=msn_new_es&preflang=es&label=:mdmsn-X_CQGFh3f*VEs1jXRKx9fA:tyS:ai76210015681213:caExact%20-%20Generic:mecpc:sobing:teX_CQGFh3f*VEs1jXRKx9fA&msclkid=9bb70d568882118c336d6b775e5ad850", "_blank");
+  }
+</script>
+
+</body>
+</html>

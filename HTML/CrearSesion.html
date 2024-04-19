@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ring">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+        <div class="login">
+        <h2>Crear Sesión</h2>
+        <form action="../PHP/crear-usuario.php" method="post">
+            <div class="inputBx">
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="inputBx">
+                <input type="password" name="password" placeholder="Crear Contraseña">
+            </div>
+            <div class="inputBx">
+                <input type="password" name="confirm_password" placeholder="Repita la Contraseña">
+            </div>
+            <div class="inputBx">
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
+        <div class="links">
+            <a href="#">Forget Password</a>
+            <a href="../HTML/login.html">Signup</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

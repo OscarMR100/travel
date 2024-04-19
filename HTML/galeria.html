@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TravelBody-Galeria</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'><link rel="stylesheet" href="../CSS/style-carrusel.css">
+  <link rel="stylesheet" href="../CSS/encabezado.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'><link rel="stylesheet" href="../CSS/galeria.css">
+
+</head>
+<body>
+
+  <!---BARRA SUPERIOR----------------------------------------------------------------------------------------------------->
+  <div class="con1"></div>
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-1">
+		<a href="../HTML/index.html" class="px-4 align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+		<img class="bi " src="../IMAGENES/Logoweb.png" width="50px" xlink:href="#bootstrap">
+		<img class="bi " src="../IMAGENES/PBWEB.png" width="150px" xlink:href="#bootstrap">
+		<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+		<span class="fs-4"></span>
+		</a>
+
+		<ul class="nav nav-pills px-4">
+			
+			<li><span class="cerrar" onclick="abrirBarra()">☰</span></li>
+			
+		</ul>
+	</header>
+	<div class="con3"></div>
+</div>
+
+<div class="separacion"></div>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<!---BARRA LATERAL----------------------------------------------------------------------------------------------------->
+<div class="barra-lateral" id="miBarraLateral">
+  <div class="separacion"></div>  
+  <a href="javascript:void(0)" class="cerrar" onclick="cerrarBarra()">×</a>
+  <a href="../HTML/login.html" class="nav-link col">INICIAR SESIÓN</a>
+  <a href="index.html" class="nav-link">Inicio</a>
+  <a href="Reseñas.html" class="nav-link">Reseñas</a>
+  <a href="../HTML/galeria.html" class="nav-link">Galeria</a>
+  <div class="container">
+    <select id="selector" class="form-select nav-link" aria-label="Default select example">
+      <option style="color: #000000;">Contactanos</option>
+      <option value="informacion" style="color: #000000;">Información de empresa</option>
+      <option value="contacto" style="color: #000000;">Números de contacto</option>
+      <option value="correo" style="color: #000000;">Enviar correo</option>
+    </select>
+    <div class="container"><button class="btn btn-outline-success start-" onclick="redirigir()">Seleccionar</button></div>
+</div>
+</div>
+
+<script>
+  function abrirBarra() {
+      document.getElementById("miBarraLateral").style.width = "250px";
+  }
+
+  function cerrarBarra() {
+      document.getElementById("miBarraLateral").style.width = "0";
+  }
+</script>
+<!-------------------------------------------------------------------------------------------------------->
+
+<!----GALERIA---------------------------------------------------------------------------------------------------->
+
+<div class="contenedor"  id="seccion_inicio" style="color: #187986; background: linear-gradient(to bottom, #d3faf9, #187986); background-color: #ffffff; border-radius: 15px; padding: 20px; box-sizing: border-box; left: 0; right: 100px;">
+
+<br><h1 class="text-center" style="font-family: Times New Roman, Times, serif;"><b>OBSERVA EL MUNDO POR EXPLORAR</b></h1><br>
+
+<div class="gallery">
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small><a href onclick="">visitar</a>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Highlands <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.adsttc.com/media/images/5cf6/e40a/284d/d15e/a900/0374/slideshow/1280px-Palenque_temple_2.jpg?1559684100" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://img.europapress.es/fotoweb/fotonoticia_20160310150640-886689_1200.jpg" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small><a href onclick="">visitar</a>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://estaticos-cdn.prensaiberica.es/clip/4dcc539b-cfed-4ba7-8df7-1eff7b949ebc_woman-libre-1200_default_0.jpg" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://i0.wp.com/fueradeeje.com/wp-content/uploads/2019/11/UNESCO-08.jpg?resize=1024%2C682&ssl=1" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://i1.wp.com/fueradeeje.com/wp-content/uploads/2019/11/UNESCO-04.jpg?resize=1024%2C683&ssl=1" alt="" />
+    <figcaption>Highlands <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+</div>
+<div class="gallery">
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small><a href onclick="">visitar</a>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Highlands <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.adsttc.com/media/images/5cf6/e40a/284d/d15e/a900/0374/slideshow/1280px-Palenque_temple_2.jpg?1559684100" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://img.europapress.es/fotoweb/fotonoticia_20160310150640-886689_1200.jpg" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small><a href onclick="">visitar</a>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://estaticos-cdn.prensaiberica.es/clip/4dcc539b-cfed-4ba7-8df7-1eff7b949ebc_woman-libre-1200_default_0.jpg" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://i0.wp.com/fueradeeje.com/wp-content/uploads/2019/11/UNESCO-08.jpg?resize=1024%2C682&ssl=1" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://i1.wp.com/fueradeeje.com/wp-content/uploads/2019/11/UNESCO-04.jpg?resize=1024%2C683&ssl=1" alt="" />
+    <figcaption>Highlands <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+</div>
+<div class="gallery">
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small><a href onclick="">visitar</a>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Highlands <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.adsttc.com/media/images/5cf6/e40a/284d/d15e/a900/0374/slideshow/1280px-Palenque_temple_2.jpg?1559684100" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://img.europapress.es/fotoweb/fotonoticia_20160310150640-886689_1200.jpg" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small><a href onclick="">visitar</a>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://estaticos-cdn.prensaiberica.es/clip/4dcc539b-cfed-4ba7-8df7-1eff7b949ebc_woman-libre-1200_default_0.jpg" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://i0.wp.com/fueradeeje.com/wp-content/uploads/2019/11/UNESCO-08.jpg?resize=1024%2C682&ssl=1" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+  <figure>
+    <img src="https://i1.wp.com/fueradeeje.com/wp-content/uploads/2019/11/UNESCO-04.jpg?resize=1024%2C683&ssl=1" alt="" />
+    <figcaption>Highlands <small>United States</small><a href onclick="">visitar</a></figcaption>
+  </figure>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+  <symbol id="close" viewBox="0 0 18 18">
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+			S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+			l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+			c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
+  </symbol>
+</svg>
+</div>
+<!------------------------------------------------------------------------------------------------------------------>
+
+ <!---PIE DE PAGINA----------------------------------------------------------------------------------------------------->
+  
+ <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Travel-Body Company, Inc</p>
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img class="bi me-2" src="../IMAGENES/logoweb.png" width="50px" xlink:href="#bootstrap">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a onclick="abrirBarra()" class="nav-link px-2 text-body-secondary">Navegacion</a></li>
+          <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Subir</a></li>
+      </ul>
+  </footer>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<!---MODAL----------------------------------------------------------------------------------------------------->
+
+<div id="myModal" class="modal" style="top: 30%; left: 1%; width: 98%; color: #000000;">
+  <div class="modal-content" style="padding-left: 10px; padding-right: 10px;">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    
+<br><h3>TravelBody</h3>
+
+<br><b><p>Eslogan:</b> Explora, Vive, Conecta</p>
+
+<b>Descripción de la Empresa:</b> TravelBody es una empresa dedicada a brindar información y experiencias únicas sobre destinos turísticos en todo el mundo. Nuestro enfoque se centra en conectar a las personas con los lugares que visitan de una manera auténtica y significativa. Creemos que viajar no solo es una actividad recreativa, sino una oportunidad para sumergirse en nuevas culturas, descubrir paisajes impresionantes y crear recuerdos inolvidables. <br><br>
+
+<b>Servicios:</b>
+
+TravelBody se enorgullece de ofrecer una amplia gama de servicios diseñados para enriquecer la experiencia de viaje de nuestros clientes. Nuestra primera prioridad es proporcionar una información completa y detallada sobre destinos turísticos tanto populares como menos conocidos. Desde los puntos de interés más emblemáticos hasta las gemas ocultas, brindamos una visión completa que abarca actividades recomendadas, eventos locales, opciones gastronómicas y valiosos consejos de viaje para que cada viajero pueda planificar su aventura de manera informada y emocionante.Además, entendemos que cada viajero es único, con intereses y preferencias individuales. Por ello, nos especializamos en crear experiencias personalizadas que se adapten a las necesidades de cada cliente. Ya sea un viaje de aventura buscando adrenalina, una escapada romántica para dos personas, un recorrido cultural inmersivo o unas vacaciones familiares llenas de diversión, nuestro equipo experto diseña itinerarios a medida que garantizan momentos memorables y experiencias inolvidables.
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL-2---------------------------------------------------------------------------------------------------->
+
+<div id="myModal2" class="modal text-center" style="top: 30%; left: 25%; width: 50%; color: #000000;">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal2()">&times;</span>
+    <br><h3><b></b>Contacto:</b></h3>
+    <br>Sitio Web: www.travelbody.com
+    <br>Correo Electrónico: info@travelbody.com
+    <br>Teléfono: +52 9932282083
+    <br>Dirección: Calle 17, Ciudad del carmen, Campeche, Mexico <br><br>
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL-FUNCION----------------------------------------------------------------------------------------------------->
+<script>
+  function redirigir() {
+    var selector = document.getElementById("selector");
+    var opcionSeleccionada = selector.value; // Obtener el valor de la opción seleccionada
+  
+    switch (opcionSeleccionada) {
+      case "informacion":
+        // Llamar a la función para mostrar información de la empresa
+        abrirModal();
+        break;
+      case "contacto":
+        // Llamar a la función para mostrar los números de contacto
+        abrirModal2();
+        break;
+      case "correo":
+        // Llamar a la función para enviar un correo
+        enviarCorreo();
+        break;
+      default:
+        // No hay acción necesaria para la opción "Contacto"
+        break;
+    }
+  }
+  </script>
+  
+  <!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL----------------------------------------------------------------------------------------------------->
+
+<script>
+  function abrirModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Función para cerrar el modal
+function cerrarModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Cierra el modal si el usuario hace clic fuera de él
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!---MODAL-2---------------------------------------------------------------------------------------------------->
+
+<script>
+  function abrirModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+// Función para cerrar el modal
+function cerrarModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+
+// Cierra el modal si el usuario hace clic fuera de él
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal2");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../JS/galeria.js"></script>
+
+</body>
+</html>
